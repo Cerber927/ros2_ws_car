@@ -67,8 +67,6 @@ put the publishing message?
   ```
   speed:0.3 distance:8 direction:0 angle:-1
   ```
--
-- 
 
 ### 🔹Case 2
 - Turn at a certain angle.
@@ -77,9 +75,7 @@ put the publishing message?
 ```
 speed:0.3 distance:8 direction:0.8 angle:-1
 ```
-**Correction Mechanism**
 
--
 
 ## 🔧Configuration
 
