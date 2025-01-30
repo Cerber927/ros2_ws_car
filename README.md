@@ -50,8 +50,13 @@ ros2 topic pub -1 /car std_msgs/msg/String "{data: speed:20 distance:1 direction
 ### ③ Subscriber Node Compares and Sends Command to Arduino:
 - The subscriber node reads the current angle from /imu_euler node and the specified angle from /car node.
 - If the real-time angle deviates from the desired angle, it sends correction signals to the Arduino via PySerial.
+- Turn left:
 ```
-put the publishing message?
+direction:-0.1
+```
+- Turn right:
+```
+direction:0.1
 ```
 ---
 
