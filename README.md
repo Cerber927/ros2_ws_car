@@ -112,7 +112,7 @@ sudo apt-get install libi2c-dev
 ```
 
 ### 🔹PySerial
-- Add dependency in `package.xml` file in `python_parameter`to configure the Pyserial library.
+- Add dependency in [package.xml](src/python_parameters) file in `python_parameter`to configure the Pyserial library.
 - [Using Python Packages with ROS2](https://docs.ros.org/en/jazzy/How-To-Guides/Using-Python-Packages.html)
 ```
   <depend>rclpy</depend>
