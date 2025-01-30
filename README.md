@@ -31,6 +31,12 @@ speed:<value> distance:<value> direction:<value> angle:<value>
 ``` markdown
 ros2 launch python_parameters car_launch.py
 ```
+- Or you can run the node seperately, for example:
+``` markdown
+ros2 run python_parameters listener
+ros2 run python_parameters talker
+ros2 run imu_bno055 imu_node
+```
 - If you launch the file successfully, you will see the IMU data is published orientation data twice a second.
 ### ② Publish the command
 - Publish actuation command
@@ -76,14 +82,16 @@ speed:0.3 distance:8 direction:0.8 angle:-1
 ## 🔧Configuration
 
 ### 🔹Authority
-- Change the authority if needed.
+- Change the authority of the serial devices if needed.
 ```
 chmod a+x file_name
 ```
-- In our case we have `.sh` file to change authority.
+- In our case /dev/ttyACM0 is the Arduino Uno and /dev/i2c-1 is the imu.
 ```
-sudo ./add_r_w_4_devices.sh
-
+sudo chmod a+r /dev/ttyACM0
+sudo chmod a+w /dev/ttyACM0
+sudo chmod a+r /dev/i2c-1
+sudo chmod a+w /dev/i2c-1
 ```
 ### 🔹IMU BNO055
 - i2c package is needed to run the IMU node.
