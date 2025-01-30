@@ -17,7 +17,7 @@
 | **Command Publisher Node** | Allows the user to send movement commands to `/car`. |
 | **Subscriber Node** | Subscribes to both `/imu_euler` and `/car`, compares real-time data with the command, and sends corrections to the Arduino via PySerial. |
 
-- Check out the file in [`python_parameters`](src/python_parameters/python_parameters)
+- Check out the file in [python_parameters](src/python_parameters/python_parameters)
 
 ### 🔹Command Format
 ```
