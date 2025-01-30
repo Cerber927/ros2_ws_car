@@ -59,12 +59,14 @@ put the publishing message?
 ### 🔹Case 1
 - Move straight.
 
-**Example Command**
+**Example Command with imu**
   ```
   speed:0.3 distance:8 direction:0 angle:275
   ```
-**Correction Mechanism**
-
+**Example Command without imu by giving: angle: -1**
+  ```
+  speed:0.3 distance:8 direction:0 angle:-1
+  ```
 -
 - 
 
