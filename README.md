@@ -16,6 +16,9 @@
 | **IMU Node** | Reads real-time orientation data from the IMU sensor and publishes it to `/imu_euler`. |
 | **Command Publisher Node** | Allows the user to send movement commands to `/car`. |
 | **Subscriber Node** | Subscribes to both `/imu_euler` and `/car`, compares real-time data with the command, and sends corrections to the Arduino via PySerial. |
+
+- Check out the file in [`python_parameters`](src/python_parameters/python_parameters)
+
 ### 🔹Command Format
 ```
 speed:<value> distance:<value> direction:<value> angle:<value>
