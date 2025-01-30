@@ -1,0 +1,4 @@
+[console_scripts]
+imu_listener = python_parameters.subscriber_imu_function:main
+listener = python_parameters.subscriber_member_function:main
+talker = python_parameters.publisher_member_function:main
