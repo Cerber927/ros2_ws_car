@@ -53,9 +53,9 @@ class MinimalSubscriber(Node):
         real_angle = imu
         if 30 >= real_angle - self.angle >=1 or -330 >= real_angle - self.angle >= -359:
             self.get_logger().info('turn left')
-            self.arduino.write("direction:-0.1\n".encode())  # turn to left at 1 degree
+            self.arduino.write("direction:-0.1\n".encode())  # turn left
         elif 30 >= self.angle - real_angle >=1 or -330 >= self.angle - real_angle >= -359:
-            self.arduino.write("direction:0.1\n".encode())  # turn to right at 1 degree
+            self.arduino.write("direction:0.1\n".encode())  # turn right
             self.get_logger().info('turn right')
 
         return 1
