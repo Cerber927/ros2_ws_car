@@ -110,6 +110,10 @@ dpkg -l | grep libi2c-dev
 ```
 sudo apt-get install libi2c-dev
 ```
+- Add the missing dependency
+```
+sudo apt install ros-jazzy-asio-cmake-module
+```
 
 ### 🔹PySerial
 - Add dependency in [package.xml](src/python_parameters) file in `python_parameter`to configure the Pyserial library.
